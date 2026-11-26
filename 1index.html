@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Mariamma Mathew – Teacher Educator & Researcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fa;--surface:#fff;--ink:#14213d;--muted:#55607a;--line:#d9dfe9;--accent:#0b6b64;--accent-soft:#dff1ef;--gold:#a8741a;
+--serif:"Literata",Georgia,"Times New Roman",serif;--sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1626;--surface:#162038;--ink:#e8edf6;--muted:#a3aec6;--line:#2a3855;--accent:#5fd0c5;--accent-soft:#12302f;--gold:#e0b25a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1626;--surface:#162038;--ink:#e8edf6;--muted:#a3aec6;--line:#2a3855;--accent:#5fd0c5;--accent-soft:#12302f;--gold:#e0b25a;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--sans)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:30}
+h1,h2,h3{font-family:var(--serif);line-height:1.2;margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:60px}
+.brand{font:700 1.05rem var(--serif);color:var(--ink);text-decoration:none}
+nav ul{display:flex;gap:.25rem;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:.45rem .8rem;border-radius:999px;color:var(--muted);text-decoration:none;font-weight:500;font-size:.92rem}
+nav a:hover{color:var(--ink)}
+nav a.on{background:var(--accent-soft);color:var(--accent)}
+#menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:.4rem .75rem;font:500 .9rem var(--sans);cursor:pointer}
+@media (max-width:820px){
+ #menu{display:block}
+ nav{position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);display:none}
+ nav.open{display:block}
+ nav ul{flex-direction:column;padding:.5rem 1.25rem 1rem}
+}
+/* hero */
+.hero{padding:4rem 0 3.5rem;display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:700;letter-spacing:-.02em}
+.role{font:600 1.15rem var(--serif);color:var(--accent);margin:.9rem 0 1rem}
+.lede{color:var(--muted);max-width:56ch;margin:0 0 1.6rem}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:10px;font-weight:600;text-decoration:none;border:1.5px solid var(--accent)}
+.btn.main{background:var(--accent);color:var(--bg)}
+.portrait{justify-self:center;position:relative;width:min(100%,300px)}
+.portrait::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--gold);border-radius:150px 150px 14px 14px}
+.portrait img{position:relative;display:block;width:100%;aspect-ratio:260/309;object-fit:cover;border-radius:150px 150px 14px 14px;background:var(--line)}
+@media (max-width:820px){.hero{grid-template-columns:1fr;padding-top:2.5rem}.portrait{order:-1;width:220px;margin-bottom:1rem}}
+/* facts strip */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:1rem}
+.facts div{padding:1.1rem 1.2rem;border-right:1px solid var(--line)}
+.facts div:last-child{border-right:0}
+.facts b{display:block;font:700 1.7rem var(--serif);color:var(--accent)}
+.facts span{font-size:.88rem;color:var(--muted)}
+/* sections */
+section{padding:3.5rem 0}
+section h2{font-size:clamp(1.6rem,3.5vw,2.1rem);margin-bottom:1.6rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.3rem}
+.card h3{font-size:1.1rem;margin-bottom:.5rem}
+.card p,.card li{color:var(--muted);font-size:.95rem}
+.card p{margin:.3rem 0}
+.card ul{margin:.3rem 0 0;padding-left:1.1rem}
+.sub{color:var(--muted);font-size:.9rem}
+.tl{list-style:none;margin:0;padding:0 0 0 1.6rem;border-left:2px solid var(--line)}
+.tl li{position:relative;padding-bottom:1.8rem}
+.tl li::before{content:"";position:absolute;left:calc(-1.6rem - 7px);top:.5rem;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl h3{font-size:1.15rem}
+.tl .when{font:600 .85rem var(--sans);color:var(--gold)}
+.tl p{margin:.3rem 0 0;color:var(--muted)}
+.edu{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.scroll{overflow-x:auto}
+.edu th,.edu td{text-align:left;padding:.75rem 1rem;border-bottom:1px solid var(--line);font-size:.93rem}
+.edu th{font-weight:600;color:var(--muted);background:var(--accent-soft)}
+.edu tr:last-child td{border-bottom:0}
+.tag{display:inline-block;padding:.1rem .6rem;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.8rem;font-weight:600}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem}
+.tabs button{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:.45rem 1rem;border-radius:999px;font:500 .9rem var(--sans);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.pubs{list-style:none;margin:0;padding:0}
+.pubs li{padding:.9rem 0;border-bottom:1px solid var(--line)}
+.pubs b{font-family:var(--serif);font-weight:600}
+.pubs span{display:block;color:var(--muted);font-size:.88rem}
+.awards{list-style:none;margin:0;padding:0;display:grid;gap:.8rem}
+.awards li{display:grid;grid-template-columns:4rem 1fr;gap:1rem;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem}
+.awards .yr{font:700 1.2rem var(--serif);color:var(--gold)}
+.awards small{display:block;color:var(--muted)}
+.contact{background:var(--ink);color:var(--bg);border-radius:18px;padding:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.contact h2{margin-bottom:.6rem}
+.contact a{color:inherit}
+.contact dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.5rem 1.2rem}
+.contact dt{opacity:.7}.contact dd{margin:0;overflow-wrap:anywhere}
+@media (max-width:820px){.contact{grid-template-columns:1fr;padding:1.6rem}}
+footer{padding:2rem 0;color:var(--muted);font-size:.85rem;text-align:center}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap bar">
+  <a class="brand" href="#top">Mariamma Mathew</a>
+  <button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main">
+   <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#recognition">Recognition</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+ <div class="hero">
+  <div>
+   <h1>Dr. Mariamma Mathew</h1>
+   <p class="role">Teacher educator, science education researcher</p>
+   <p class="lede">Professor and former Principal of Peet Memorial Training College, Mavelikara. For nearly three decades I have taught future teachers, guided research and built tools like India’s first e-portfolio system for teacher education.</p>
+   <div class="btns"><a class="btn main" href="#research">See my research</a><a class="btn" href="#contact">Get in touch</a></div>
+  </div>
+  <div class="portrait"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAE1AQQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7LooooAKKKKACiiigAooooAKKKKACiiilcAoppY+lVb3U7CyiaW7vbWBE4ZpJQoB/E0wLlFY0firw68TzJrmmtGgy5Fyny/XmpdP8QaLqGBY6rY3JJwFiuFYnp2zQBqUUwPx2OPSl30BcdRSA5paACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKx/FPiHTvDelTalqlwkMEQyeeWPoBQBpXVzDbQPPPLHFGi7md2CgD1J7V4v8UP2gNE8OXP9n6DDHq91sDGZX/coe44wW6jpXkvxk+MF34qt5LRJPselCQ7Ig213x3b1+leA3+sL5waNOQDk+pNVyiuew+Lf2gfG2tRNDHqX9nxyZwLUeWRye/XuO9eV6p4y1W/aaS9vrmaWTiUvITux3ya5a5vXlbgY5JqvI27r1q7Im5tXWtXNxFseeQ8AZBxxx/hVnQdf1HS72O4s76eGRCCrI5ByMd/wrnBu2ZpxLBgfbtU2QXPWNN+Nfj6xtGitvEd+GLAjMm7+ddl4d/aK8dabEI7i/jv2d/m8+MMVHtjBr55jYhgFOD6mpYC7zrzuz1BodkUfbHgD9p/w7qQtLbxRYzaXcSfLJcx4aBeTgkZ3AfgcV75peo2mp2cN7Y3MNzbTpvilibcrD2Pevy8aaWOBFOMIOPY9q91/Zn+Md54XuI/D2oFrrS7i4BLytg25PBOT1WlYSufbNFV7K6hu4Ent5o5onG5XQghh7VYqSgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooppbB60AQ3VzFawST3EqxxRgl3Y8KPU18TftL/E2DXfF0i6dPI1vaDy4Nr/I/qSPrXb/tXfGHy538H+G74OFBW/ePI+bsgPt3r5XW3muZjLKxYMeW96pILjLu7ub2UySyMzHnBqtZ2zyyspUn5T+dacFqR8rkDDYUmtq3gjSdYZEG+PJ3LwCKm44o42S2bdyBzUDxtzxXaTWSFpHCLz2x0/8ArVTTSAZyBkpjJJpqVxcrMGxiXLrLymD/ACqc2+28CcEMNufr0rpo9HTyUcRZP8fHFW00HEqPNFhWIww9KOdFezZxf2fDsMc4wKuw6c8VuJmUgycc9cetdjNpdlHPJcmIqoO2L0Iz1Pv0qlqAi8/zdjsTgYbgIPQCoci4w7o5u9VlBXBRWxhepqO1llszuUhW7c5rZkjillDTQFEBwN7dap61aKZA6INmMhUGaFLUTSPoj9kv4o6iniCLwxql4HsLglIFkb/VuB29jX14hJ54welfl14V1X+x9Whuy7xtC4dGP8JBzX6JfBrxraeOfBdpq0LRicIEniVgdjCrZmdrRRRSAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAryj9pP4iReBfAF21tNt1W+JtrRQeVJHzN+CnI98V6o7YBySMDPvX58/tL+KpNb+I2o5L+XazNbqCxI+U43Y6AnAzTSuBw8MFzdvLfXnnSyM2cuxyxJzmrMOXBjeEIXOCoPSmaTfD+zZJZx5krY2qakhglUGYr7n2z2FRKUkaxgmOtbeV0a3Krt353d810+l+GjNEju5ZdvO41Q0SAyyhGjwfQDqa9A0uwmiIi2lQBg4rnnOx00aaZjWehWyrsBLnPIC84qR9DtjN+5R3cjByuAK9G03RwLZWMRVnHzMRV+20RI1Pygg9zXFKtJHpRoQ6nmdtoUiMWAxxjB6Yq1NYqiKhWPge+K9BOlq8gG3Az6VHc6XH5RVYwPwrN1ZS3KVGK2POZNOtGKhwMrx8vSua13SESZ5AGC9ua9O1DRSqGVEB9AvFcvremOtr5rg5UEkE1pTqNGVSkrHkup2ro4yzFe2W6VHZh1vVQEurDua3dRs4ZRg5G7OF9qxBbXFvIDHkkHj0Ir0aUkzyq0FFlDX4VimyoGc8jPWvfP2P/iHYeGNeXw7fuscOqYRZeySDpn0Bzj64r5819ppJhI647YrT8HzJbXlveNMYikgYMOSMV0WuczZ+ocTbu56d6fWJ4Enu7rwjpVzflDcSWkbuynIOVBzW3UjCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAqajse1mhZ9m9Cu70zkZr8xviKyJ4z1e1W4+1CG9lRJc/fw5Ga/SXxq1xa6FqGo2dz9nnt7WRwWXepCqTyBg/lX5h6lM17q8s8p5lmLOe5YtVR7gaOlwPE8RPzMMZPZf/1cfnXZ2Fu8+nFsKpZspnv3JNc21ys2ofYLdUTYQkroM/dHJ/En9K7jwpot1rl+scHFrAoDPjhj1NYVZJK500IuTsaHhqyVQrInmEcFscZ/wr1rw1ouVM86/OzenSsvTtHW2kjigh2qn8vSu30dliTa/wA3pXnync9KFPl2HvYRqhAXJA45qRLXCjKnitOMLKOoGf0pQU3bMD8qydmdEbmObX5uRgfSlezjb5SoIx1xWrsX5jlT+FBhLHPA49aixpYwbiwTaP3a9e5rjfFelg2M4VMktz3r0mdSox1+lYOsW3mgk859RWsFYznc+ctatZLZ1aWFmVGZhtHTkj/CsbVX/wBHbywm8jcmO9ex6/4Xu2ZpbeNHiIbKH6V5j4n8NNa5ZoLuAg54OVA/pXXCornn1qTZ5xqH2iQjO1gOc4war2ZCyod52g4JHY1uaisSIB0werfxVz87hJy0RxzkV3RZ5s1rY/Sz4Daq+s/CzRL2QAMbfZgDAAUkDH4Cu6rxz9jrVBqXwP01GZmls55rZyTk8PvH6OB+Fex0mtSUFFFFAwooooAKKKKACiiigAooooAKKKKACiiigAooooA4X46a7beH/hfr19cSbd9q8MfGTucbR/Mn8K/NKeRmu3f1JbNfoX+1jpcuofB7UZoZfL+xyJM5x1XO0j9RX55X8YW4EcZJz13DpVLawHS+BrWa9uPIi5mu5OW9Fzya+kPB2mwaNp8dnDyxGSfWvFfgvZhtakuGHyW6BV+pr2qyum+3BFXMgIAFeVipv2nKexgqdqV2d7pVsgVAU3Fhlq3IdKXhlXb+FchDpeuXULTJdLbjOfmfbn8ulULrWPEehttleaZB951fcp/A1Cjpc3vI9GGnspwtItowckrg561yXh74hRXcgSeLLe3Brt7LUbe6RZI2yKxdk7XNISdrkTW75Hy8fSomtZGbJBA9q1nkjAyT15rMvtatLUDJBbkACpLuRvY/3sgGq9xYxhT0z6k1yniHxddTTNDbsI0HA2tzWTHJrd4AFuAoI6mQk10RStqznnJnVX0UZjZQB6ZHNcPr9qkheKVFYYIOa2fsep2iiUXAnA647+tc1rGoCedzyrr1U+lZ1LR2ZpSd90eDfErSF0zUHVD+6ILoP51wKyN5gJXPI4r1j42Rh7G0nBwwkIP0IryRs+YGU8Zr0sG+aFzxsZDlqs+7v2Hr+M/DSawMRjlF5K7f7RAjyfyZBX0JXyx+wrqAuNAvLOSZDJbXBlRN3zbJVUMcem6Na+pU9+uOa6WcqHUUUUhhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQByHxi019W+GXiHT4lDSS2T7FIzuIGQPxxivzW1CxWC8RVO8ORyRjBr9Gvj/c3dp8JtfubMkSRwZJXrtyM1+dWntJf6zaQy5ZfNDsW7/NTTsPset/CLSnttBM7D55G3H8OBXoGnzLYMZpM+YxwKq+ELBY9OiiiGAIwcfWrOt6bcNBiMMW5xgdK+eruU6jsfTYaKjTRop41mFx9itkWZx99ieB/n6VHe6xczTGO4sdxHUrJj9CBXEeAtNtdX13UNM1XUTZTxxuLeEvsV37Et6e1Y1p4d1qPxZZ2L+F5Gmgtnt53eZtkzkvifd0GNw49q9ChhE43bPNrYvlnoj0XyIGuCEDwTD5vLcYNdN4W1eWNlglz1xWP4m8LWeix2K23ia1uXjgTz1ku1MkcmPmKnPI9jSeHA8N8lxJOkqyEYIOQf6Vz4mg4S0OrD1VUieoXd0wtS+eNvNeceJ9ZEbssJ3MxxyelehXVzbtphZWAO0DFeTeIoGmv5JUaNVhO47zgAetc8W5OyOrS12U550jHmXMhLHkKq5Jq3Y6jKSohs5D8uf3km38qseDvD8OtXboPEGn2mUZvMaVGlYjooHRR9a828TXniTTPFN1psMOsuwh8uJQ4YGbP3xgYKH0r04Yf3dTy6uKinaJ6RH4rZJvsV1EYJcZTJ6j2xwaztSuILxjLhRJnn1rivF0GsaIunw6xPbzyTxq/wC4OJIm7gj8f0ro9Dsb6VEuJVJVlBye/wCHrXBXpuDO7D1Yzicl8WNOM3hksi5MTbz9K8MfcCw6cnFfU3iayWXS5o3UEFCCD9K+ctd037LqskTKyhsMuPQ135fL3bM83Mo+8mj6M/YP0+7ufE2o3i4S1s4wXYPtYs2QEx/EMAn8BX2anXt+VfHX7A0V3L4m1h13fYoLQZPbe7rtz74Vq+xl6kV2t3Z51rDqKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDlvipaNqHgDWtPQbnurZoUGP4n+UfqQa/PSy0WW21OKKWN0ljl2kkYBwa/SfV7f7XYyw5KkqdpHr2r40+J+n2tj4iSNIn82W8kGX4CgOc1jVk0dFCClo+h1vg9SQoK8YAGK6yayi2EYzkdqwvDcIWFSBgcV19vbMEDbflxnOcmvKatI9yL0OAv/AAfZXGrJfSQyRzLyJYWww+tUb7wWXlKRalqKRBRlWlJA/Tp7V6RPPFEv3csPasi4nuLlikMO3PVm4rop12lYwlh4uVzlZfDmkx2AhvIftWwcMfvMfr+FT+GNMEEqALtiTiNAeBzW/Jp3kx7pDuc8n/8AVTbFQs6qoA5yawrV3LQ3o0oxeh0M0A+yYIOFXIFeb+JtK+1M0Mqlo2+VgCRkCvRZXcW7bW/hrmrk5lJbnBrmjKzujecLqxxun+FIIYtkMnXhGVQGx6GtHTvCzoQYNXvIGBwQSGDfQkZrdk09nj3RZU9cZ4NS6XdPbS7bhd69CG6j8a9COIbWpw/VoXuchD4PiGsLdXay3Lqc7pefWu4g09fsoOwLt6CteGW1mYGJF2444zzVh7c+SzMoAPQ1z1Kjk9TaNLl2POPEsJVJMrwRivB/EVn9ou97IxKM65xk8GvofxbFthlyc4FeMSQTXFxqFhDCJNzeaoXkg8ZGfpmtsLdNnLi7M+gv2JdDl0fwrqV26FF1KUSxAjny0+VT7clv19K+iu9cf8K9Jg0jwlpNnHF5ckWnwrIuMbTtBYH/AIFk/jXYd69RbHkS3CiiimSFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADSPavkj9ozT5dP8AipDGVItZF+0Q+hLtlv1yPxr649a+ZP2u43Txp4eudr+W1uYy2Plzv4GfWs6qvE1oStMf4YO+OJQ3GBXf2m0W4CrlsYrzDwzNsggbOMoK9E0a7iZQTnJ715U1aR7tLVE0lohPCDnrmqzwwwJI74H15rVmli8stuU/jXJ+Ibma5kEEDbVP3iKg1uVdSvWaNmhTdg4X3q14WsTeXQLfI5XlTWLq8lzZW5awtvMcDb8x4z61X0W98SWdwbnVVs44cDa8MpJ57EYo5b7Cckj0a50VkVynAAyc1wt8HguZAiNId2CBW5N4qaOzYCUNJjjmuVvm8QKzTQpZJFy2ZWO5s+mKSV9ilJs27O5CiJnG0Nwcnoa2JNKguohKgAOM/Wub0yOe6sw14gSR+QB0B9a6LQrkxR/ZpDnB60MCxptgkRCtHjFWr5Vjixk4q+TDsBDjJrB1i6Cl1J4U9aVhXOL8ZuWjcHoRgV538O9Lv9U+JC2GnZMspyfZRgt+nH412PiW6Esjx5+8eBS/s1weZ8aLmQZCQ2UmRj+8wH9BXbhlfQ83FuyPqnSxtgRdu0BQAPQCrnemxjFOr0Ty27hRRRQIKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGkjmvkv9o/Wf7d8UXcJREGltIIRgbmMckYPJGccscZAr60IrgdR+HWlarrmtX2q2NvPHeoscAOSVxuLN/sklgOOu2omrqxdN8srngWgzB9Nt2Qqdq4BA4NdVpWqNEULnIxXIabYT6NdXmi3R/fWk7RnPcA9fxFbCoygFGOPSvLqxsz26M9DrZdVEkZC4XNFkoKNIR8xFc00jIN2DwKe2uC2K/OoyBgE1D2ujfmOmitWliO9eGPTFP8A7MtHge3njyG9+lYlr4u08RshuUMucDB71bbV1mRWhDMDw56YqoU5WuJzRctfDekQsZDFngHlqLrT7drjCglQB15AqrFc5aRy8jDcNgLYGKi1jWRYIJJYJDGwBDod1N05ApJOxfNu6jaMADp9KrXRNttlB61g3Pi+3dc28oOByDwRVMa+1/uiRgxA4ArJRZfMjq/7aUINzjArB1vWGk3gNwe1UFE4t90oxmqMy7uxJNGzJbdjMvJmaUyEE4HrTfgZrKaH8Q7zUWjE8jlYjH0O1mAznPOMniotW2plWIAPGe1euaP4R0yx1Pw0bWwjZUdvtkjjHmFgrKWPVgCpxXdhoO9zy8ZNbHu8DBlDL0IyKkqODpwOMVJXcecFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVHI21ST2p5OAT2FZ+sXflabcTJ/wAs42fJHHAzQB4f8cbGx03XbTV0ZVkvnaOQHjcy5xj8q5i2cFdwIwRxXn37S3i+51bxfpkFrPMfsEEcrIo4DyZck++3FdJ4R1P7fp0TOQCy5xXFiIW1PSwVTTlOpjKMpRhncMCuf13Qvtr+b5jBVxtQGtmJtmOa0LK3WdCQePasVojsuzj7PTRp5VrfToGQEHkf1rtbODw7d6KJJv8ARbgN9xZ15/XNH9m7t4AII/iFZ1zouoS7lQoV/wBpeaUZtaGidjUhs/De4CS/l2kHePNUADjpzWV4n/sCNILbTTJeNt5YzE/hgcVUTwnd7AdnI5PT2/wq1BoepqpGQijjhAOPwqpTZSkpu5yNzo0c7lpIl5PyqSeKtaDpi2d2XGAMYwK6G5sGhALk59ap3REYBztFZqWmpE1qLqcxO1FPA96g4WASNxxVKSZWm2s2ar6nefu/KQ/LjAxWdtRuWhwfxO1zyVSwikCvO/Jz0ANfQHwB8Z2PiXwhbWOsBZNbsmELCRsZTGUdfYjFfJnj6Xb44RrhSY0VePY9a9k8Mm8sPDOl+NvDzLPcaPusL5IuDdWwyV3Aj+739cetevRilBHh4iTc9T7G0yZ3jw7bmHvn1/wq+DmuW8Da1p+vaJY61pc6zW92gZSOG75DL/CwwAR2xXTCT5sEHitDEkopNwpRzSAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGSHAriPiI14fDGsSvOtvaC2ZS0anzCM9Aex5x+Vdu4BBU965b4htDaeEL955RFbiICRiM4G5Rn69qTdtwPhb4rRz2fiLUdPZQJYrqUs+4sxbftQZ7rsIxXYeAfNbw1bS5ImhYo2euKy/jTLYa94o1DWtNAtJogsUVtt+aU7juZuw6n8AK3PhMkp0qe2uEjEmQ4VDkEkcmubFSXIdmDi+Y6KG+OAJCa2dC1NANm7k+lYl9aGF2wp2Hv6VR+aFt8bYIriU0epynp2k3ccspVgK3TDCI8hhzzXk+n68bafMhIHrW03iZCny3HYDGaUWUtNzt2ljSUAYwBTLu5iETFWFeeyeJS0oBl47VHP4kRo2QyAd+tNufYLx7mtrV0rO2WBFcb4g1TCiNevtRqGrPMCsa9f4qzFtd+ZJOT15pJrqTPUhiuZ3AJ+XPc1YIYjLE4AzU1vb+a3TCCrBhMkgiUcAZJpOSHGDe54p8VYdniBJhuDbB/WvRf2c/Et9HHfRQj7RLGqLJbuciWPGMgf3hg/XIrk/ihaPPq+9VLKi4IAya4vRrm+0bxBFc6VfSWc8LhklB2sMHuP6V6lGacEjxsTBxmfYXw78RaXoPjGaxs7l/wCwdaeS8isz8sljdrjzY8dQGB3AeoavcdE1W3vbZp7a7ikgIypVhu9wQa+Ij8SP7Q1XRLjVxFZX9gZN+rWMWXlBjKr5i9DyTn1Fej6H4y02+kt7vWdVW2nQAQ3sJKW8nTpgZzxyDXRbQ5z6hE5ykqTkMT8qHGGq9b3SSR7zlc9jxXgPhzWdT+3y3sT6t4jjJGydoTFHFzwNzYJ+uK7+w1HxSJDI3hSEFF+82oAue+eVxjFTYD0WKVZN23OAcU+uGtPGr2SZ13Rb+yVju88J5kZB90zj6nFdfYX9te26XFrKssTjKspyDSAtUUinNLQAUUUUAFFFFABRRTWbBxQA7PtSZrO1HW9M09S17ewQgHB3OBilk1rSo7IXrahbC3IyJDIMEUWa1Yk7uyNDPPSmSzRxqWdlVRyST0rzHxX8X9Ist0GiwtqE/ID5xGD9e9eVeI/FXiTxHIRqF6627dIIsqg/Dv8AjXPVxMII6qOEnUZ7B4z+LHh/RBJBYk6neKDhIj+7B925/SvCPiD4/wDF3jGzm0+edLSykPzW0CbQQMdSeSePp7UsVgvUckdsUHTsgtt/OvOqY9t6HpU8BCG7OH0Lw99lQ3MjIzp82948pu64PB3cZ6muo8MsLTUY3CKnmLlgowOfbtVmW0DWUyEBgd5VDkAFUPJwetVLfKahCcfKQBms1UczaNNRbO7v7KOaASKMoRmuW1GzEUhA6Hoa7HRpQ1sEYblxioNUsIyrKVyh+6cdKm9jSzPPbpXI+dRiqUkSNHxKVbORz2rqbyyIJRlz6H1rCvLJ0c7oj7cVcWiZGDNERIP9Jl4PrTocBs5Z+e9a0ECYwyA59RU7abGwG1fetl6mWl9itaMHACoF/Gr8FtJcMCeFXrU9lp4RRlQcVqrGkUeWABArCTNYxKMkQiiCxqCewqZbY2tmSfvtya1NH003DfaplIjH3feoNdViHEfbipNLXVjzLXLcya4JVcRsHUh/Tketc14l8IyXF8rqsS+YgOYvuyf7XsfUV3s9vnUYmBXcJUwWGRncOtX5rBDLC8cboBFuIIGMk9vatfbunscsqCnLU8jfwdfoUgF6gRvuF487foc1f0vw3NYS5muXkZTkrtyp98ZyPqDkV6Q2mF5OASh5APrSDRJEmWXzE4GD8vNUsdLuN4GFtj0X4S/ELyrVtJ1TVms0VR5clwqNDtxyrZGSR6lhmvYdEurm9tHgjNtcQIQ8ckJKho2GRkHPfI+92r5jh0YqQyg5IODnk1oaS+s6HN52mX09tJ1yjcH6jvW8McupyVMve8T6nsJlmjjhmBTMY2hl+vQ9KiuPD9ukrXWlsLK6P3mT7knsy9/qMGvG/D/xl1HTIiniWzF3CvBmjAV/y6GrUP7Q2ii68sWR8snCjdhh9a9Ck/armiedVi6T5ZHsGmatm4/s+9QQXwXIjLcOB/EpPUfyrXVs9q8cvvin4W123Ant722EJDw3sSiTyZOx+Xn8Pzrt/hv4wsfFOlbo7mFryFzHOiN1I/iXvtI5H1q3CS1aI5o3OtoooqRhRRRQBz/jLxhoXhO18/WL1ImK5SEcySf7q9TXjnjD4r6/qcCmwsZdH0yYlY7g4aV//iRisj9qqTUF+JGnrptszTHSYwZOO803ygHv1/MV43HDfXK5vb8ptYrJDvLOuPYDAr0cPh4uPMzmq1JqVonSa/4o1HV5JLCzuXfI/fybshwPf1qjo+pfZL5dNvbyVrckAIznC5GelZMl/FaWrWMSpIrcockFfwNZF0SxExIVy/OBjBFa1aCqQcAo1VTqcx7Tbaau1HQZUjKmtODTkQfcBxzmud+F+sf2rpf2WVgZ4MAZOdwrvbeEnHHA618TXpypVHCR9dQqxnTUkZS2X+yBSPYk5yvPauiitCxzgVOLIjkgVgbrVnHy6eEs5kC5Z1k/Py2/wrnr7THWJJowW2c8eld9qEDmQqF8pS+3zWXKhij4Ugc8+oqCGzEtkjmMjegJB9cdKuHumV1KTRk6DPiFcmuiUxPEVkAKmsF9PktZC0YBRumO1aNnMAgR/wAc1U9ARV1Ww8n5wu+I9wOlZU1vBIPkf6qea7GEq6bDgq3UGq11omnzqSqNG3cqcUcwnE4ue0hUZ2jFELQYwAuRxXSHQYEkC+c5H+1Uo8M6fLy0j574OKOdk8upyzzRB8LwfYVo6ZpMt44luFZIhyAR1rpbPRNKs1DQ243D+I8nNWmUAEjgUc1y0jNmj8u3EaKFVRgAVh3tuZIycYxW9dBmchSOaclh5i7WHHtTuD0PPV01jdxnZyZAR+HP9K24tPklQDYAVRVI9OK2ptN3z+XFIqTMuIVK5DsTjGcgLxnrWjaRebFv8soXJOCOayqpsKbTZzX9k7IyFA3DpR/Z2FBZATjniusNptGQOTUBtufu1CRs7HMx2wQg4GQeCO1SyWyM3AAIHGa0Jrfa7BB36Uy4j8iFppDgIuW56j0q4pt2REmkrnmvj6+S3uo7MRkq3LtnBX2+vH8q5uCOw1QuWhKuDtLA8gDuK73R10WbW7iGU2V5dy/63ckkmOPnBGztwMg445rC8TeFLUQS3ekQXEMrSlI4x8ykew6kfhxX2+DoKjRUep8fiMU69aWmiMPSW1TTbphaET2yScI/Ksf8a9S+BmtXl18YtKiubaJJZUmSV4sgHbDIRkdPavFprq8A8qaSQGM9DwQR64r0D9m2aVvjZ4dG6bDC53BmyD/o8p/L6101or2b9Dnj8aZ9oUUUV4p3BRRRQB8x/tWPqD/EnT7ayRjv0iM5A7+dN3+g/WvKhoHiC+jefYCYUIfJALDv068177+0Zr1loviCETW6yzz6cqxjaMt88gxnqMZzxXhKeMdViVWbyHVVIcFAu5c8jI5wf6V7NCNqSZ5zk/aSTMSXTZoHdJoHVx3+8PfGOtaPh/w5LqLhpJlt7VcedI5x8p7gfxenFbvhnVrXUITlYQYGJZGUkIjHsc+uMfrXoGj+FW1Pw/rGorqEECQfOQTuU7Vz34wOg7ZrSUtNRu0Xc5mI6X4aDz2KoqW8qxyyMu13BAxxk16Ppk9vfWMV3bsCjgHArxKb/S5INVvZQY2yqxuCSB2Y/XOa7r4c6tBHL/ZBkAA+78+R/KvCzXBOUfao9nLcWr8jPSLSMEYOeKuxxgjpxUEXYKBx+tXYCpwTwTXzUUfQmLrkMUWZ5Vb5NrIE4LYbkZ7DHem6dFG0BRTlA7cZzsGeB+WK09XtxNbuGwwZGXGM4yDVbSIcQtuZnZgrEnvwB/SnJrYyjH37kc1lGEC7Rg1kahpzx5dRwfSunkU8AgfWoJ1QH5ulPm7mhztpKeOMY9a0dhZcj0p93p6uRLECpHUUQJMgwRmjlFcoz27u27dg062t7kNhicVoiISAgggjv6VOsbRqAWzx1o5QKoTaoyBmqV3IBkAfgKt3O8njvTbWxMj5kPU9KhJjKdnbeYwZq24bZRCTtBJ4FOESR9gPpUwYCLAX5QOavmsSzDukgeZ4SuJCTJG4XJJUYAx0xk1esrciFAygHA6dqhjHmyCA7dsbrsbPKjlmH6itdNpPP1pSd0RTXK3cpyRYyoGPeqlxEVBwR0rXYAg+tU5EDMeKVtDTmMN4QJOvWuX+Jklxb+GnitSTNcELjPG3vmu+a2UjJHf1ryT4geILSXxNLpz3DwR2yECReRu967suoOrXTtojkx1fko+Z5fcRT6fdqZA0cqHILAZznOR+ZrsPDPiJ9Rkjsro7WRS20YVGI5zgAjd7YrKvn026ZVkuTIx+bKLxnB5Bz1PFYkFs4uQIywlZ8oR/PivtLcyVz5Ntq56PqPhzSZGjvr2eJnlYb5pI2jRiRnGcgEj14FdP8D7/AEkfFjS7OyCS/NNHFIkChQBBKT8w+nrXmAhurpAb/UJ7mNQQoEmUGOxz0rtfgBewL8XvDlhEEJxc7trdCLeU8++OKVdLkduxNBST94+uqKKK8M9EKKKKAPmX9qq1ur34j6ZAjkQnTYVBYZRZGmmx9CQD9ce1eTxaL56P5Tlx0O0AtjuSByMV7X+04kw8aWEibcNp8ags3yqRJKxyPpz/AMBxXgssskjPcjcGc5fA4z/+qvbw2tJHn1Je+0UpbO40fUgVkyudvBKnHYnrtzXX6VeXt5CUu76Y2+BvXPzSleiqSMnPH4VxdxdpLMsdwiF0IC4VQCPQ4wR9a6fT7qFYrae2dUMqlpArbSrAkAAjnGOfU1rFdyJJNalnW72IwTQGCEFuY3VnB3DqfmOGGBjOKxrG8nsriG8hJVo35xxTLqdrm6eePKhDgtIckjpnJ5x7V0nhPwnNqcc087CG3hG4K7AO7dSAM8jHpUVIqUHGRVObjJOJ7H4O1hdY0qGYcybct6mt8y4wwBGO3rXmFn4n0bQ76ysbYMm2PEqqvA9h8x5+tekWN1De26yROHRxkMK+JxuGnQqbaH12ExCqxVi3KxeFHDY5UkfjVfTptspQgfKzRn88j9KWaZYbaRpCNgXtXNJ4lto9Vnt1srtm+Sd/k4VT8u489DXC97nZY7QqsnHHBz9ajaEZwwyvrTYpA0YZenap0G8Y4oENMJC+4qHyPTJq8oz836VII1KZIwfatLkmfb27YIxzn0qSSykPSrqR7WBqXBHJPFUBktYjb8xwPpSFAigIOB3rTmwQQagZAw4pBFlHazDgZHfNJcApDhio3cDnpV0hIwARnJHA9K5nxT4gt9LVftMMqxnEZmK/IrNwM1m46Dui3YFuHCFjIxPTgA9P0FaQyMEc561Q0u6gntBJbyB4yPlYHOQOK0Y8dc/SnHYQEDbkjk1ESB7+tTHKfMME9qryMvLE/WnzdgMzxJfHTtJuLrncFxGo6sx4ArxKbwXqOoWNxrF6Jt0pJVVeMd8dzuJzngCvQPHPiaxgvlgu2V7RRiRfN8tsn2AYke2K4mbx9p1o0VpY6PBcwqxLSyxqrMuc4HBwM4PT8K+qynD+ypuT3Z81mmIlUmox6HD6vYah4b1RrS8idWKhkcxsgdT0YBsEenIHQ0+31EW65jRJAE2gSJkjPrkECvQo9M0rxZpd9ehUjEe13lIAlTJywbGAzcjHyk15zrWi3dhfGHY8oZA8bKhJ2Hp1xXr06i2Z57jbYp3l5cTxJC7gRg5VVXC/hxzXf/syq0vxp0GYIxUfaPmAJ620vWuP8NaPJqF2VmgkyiF0UKRvwOecdPwr2v4Iatotn8QPD2gaaq75ROzPEGXcwgkJDZJyOOMY7UqslyS9GCvzL1PpiiiivDO8KKKKAPIP2kNBfVNJ+32ozdWVuWxjO5CTn8uv4mvlm03S3McEcZkeTjZjPOeAPWvtrxoub1CVDKYNrA+5P/16+TLrSI/D3xQNk6brdZDNESC2UPK49wOO3SvZwztSVj5/6x/tU6T7k0/hux/saf7TIgmhi3IFwMkHnBzkntzXPf2FqVuskFqklzGqiUeWMbfUc9O/1p3xE1qW88QNJDMfLRwUxsBPOTnbwafpXjYR2Yhux5coG0yLGjLjPJJxkk5NaOT0O5RVzY8P+H3gEEt6yZCeY0ZOQxwM5+hI+hOOxq7rutTLdRWekzyLM8XlySrkAHGCvuMVzsPizUNYMNjHAkaoWVmjQlnBPAwMcYOMdMnNal7qMelw2k0cXlTgt5e4FWwT1JPB+gBptX3HF7mQ2kzi1W48/dJuPykjd+XpXY/DvxdcaZcfZNQyIgRz6Zrgf7QnW+e5njSTc+WVwc89/XP0rp7Gez1SJ5nWP7PGn7xNzqVPYlzk/hx0rHE4eNenySN8PiJUJ3ie6W93BdW5kjZXRxx9K5wvfjWUDWtuizo8SuEz8q8qGPv2rzzwp4i1DSZN6O0tmDhlccj/AA+vOfSurGqW2t3KzW+ptbzGZGETNtIUfeAHQ5FfJYrLauH1tdH02GzGlWVtmeg2Du1nGzgKdvIFWYpiDk1n6Nbyw2axtM8rDJG/qR25q7sevOsdycWW0uQOh57j0qwlyuMZ69hWaYsOcZw3WnhcHNK4jYR1244qOWbB7cVRilJJK0TScbsVXMInkkcn2NMEmxOuT3qq8jbcEkrTVcEHH5UcwItJIWHmN1/h9q4nxHfMuqwLf2qTWu4zEImTHt+Vc57Ek10F5O62zoj7XxhcdfpXJ2yyJrs0AD3MFwQnBLbVjJDZJHd+aTlcSWp1GnxW9vbrFboI0K52jj8asx3QZQD24+tVxES3YDpjvilvLiz0+1Mt1cwwRqM5duacYznpFXBzjFXkWhcNk9MVzHi7xMbW3ktdPCzXWMZJGFPqa5fxd44mlgSLR1Kwylh55Bz19+K4++1p7WJC+8u3LKjhlk9wVJP619DgMok7TqaHj4zMYfDTK+pTW8e6a9V5r44Z5J2yCf8AYU9RVY2ljqtvuhEk8+3J8tcbfYj/AArn727NzMWuVzjhBnIHsTUmnXUtleQ3EeNy9iOWHfjBH6V9DCCirI8CU222wmW8sZA53xfONjcrgjuB6dK9O8Ma3pWs6POl5HBDdIP3jrMVfaF65Y859BXGR/ZdUtnn84eSZA0sZPT6cD/Cs3U9Je3vZA0scMQYDdJIOh9dpOD+FVypmU4uS0Z0HjzUrW20qCy0aQFnBMjMMMo7Ddkjt25rU/ZwtJo/jB4YmkZcH7TgFvmwbWXnHpXOhNMtbKYtKr/u+JHdVU+w4+Y+xINdR+zlM918Z9Dl6KFnIDsS237PIB+H41lUjanL0Zom+aKufYtFFFeKeiFFFFAHNeKZU+3iFxwbfI/M187fH7SWtJrLXIpCipuhcgdAwr3/AMeAibeuQwhGD/wJq8p+J9vLrvgDVIo4z9ptY/OUA/e28n9K9jDr92mfC46vyZi15nhMmmQT2VvdOJHV8oQr5ORyemMcVg6pYwG6tYo38lCcSSv0J6g5PYelbms3qNbwW8AQKFEgkyeeOhrjNb1e4lv4knkeQbgF9Vx6VrJ3Vz6iDujrNAWHTpHkkO9ucEpuVyM88kfXvRJcN573LBXIfOMgjJ+mKgtpDOodUCknjB5ye9dLpnhaee2lvNR3QRqVAjbIclvunBHTPerU4xiK3MzP8LeH38Qax5MjSW1szbPNCHCk/Tj863vFPhe48OXazWty00BjEmyQAFQR90jGCf8AOK1PFF9p3h/SQGRGmmjVY1G3yhxg/wCR+dczoni+XUb2G1vZYzE74QFQEUkcDnoD60lUbQnSamncqW2tMYBHPEhy/mbdpTYenBHHXtjHtVSK7uJ7uR4mc7+SqcqPrxXouneBrXWPJtrhYprqS4MMYgddxBXcXHcqPoBUt14QTw1Nd2sdvGJYH+dn3nKdmbHGPas3NS0NLLmKXh7xN4n0uSGHzY7mIoD5ZYMVGM57V6JonjvRb23Pm3sP2oZIgTPJ29Mkf5NeT+J9R/tG/W3s4Y5XjjKNLuUq4xnK4Ax+tc5cWU1uIpgNqf3geN3uBXNLA0ausonRHGVaekZH0jb+I9OljLAyKOAQR69/wqCbxh4bt38ubUkR+xZTtP49K8b8O+LrhP8AQ7/yvJlcKZTGN6L6g9R07V6Dp/hWDxpJLBFNGsG3f5xbceOAUJ5Ge/FcNTJqS6nbHN6iidjY69ol40YtdTtJWY/KEkUlj9OtP1DUtOs40e5vIoBKSELPjcfxry6R9J8LRSTwQR217C5CXERJdioOAd2Op7iuM1nUL7XRJqV1PuZT8kSjG0evNZRyGnJ/EX/bE7fCfQkF9Z3ELNBcxSKOrI4Iqhf6np1m0Yu723hV+VZpMZ+nrXgHhnxJfaJezqjjypQFcMOAD3Fdxqsdp4jsIITdLNIkY8sQR72T0HPfNDyKCeshf2w7XsdfqHjDwtEw3apC5QliE55HIHvyBVCw8YaEkYW1+0XLKuGaOBsepJJxgE7j/wDqriYfBLaTf2q6wpkEjgwxgg78dQwz05554rX1nUtP0qymUWsVuDIiyRgDOeu0DnqDzzxWiyWgnqyVmtSpqjr/AO35b60kSwVba4ZgsfmHduJGRxjgcdTXk/iufXzepcX00l0hJABIZQ3ptyw61F4m8W3F0zRaR9p0+IqFkxLhn9Oew+lJ4J11UvLSw1Nna085dsh+Yx++DgNz3J9a9KlhKVCN4o86WIrTk+eWhkyaoJLDbImJ/Mzho8Ads8H9MVnlZJ5n89WdiPlOM89uv+Feqaj4E0/UoLiSKWQSrMqQNFjZIuSXLdsjPHzc5FTaB4bh0aeQCF3+XazeYA4PfK4OBx1ro9roY2TZw+l+FL27VNQv43MLD5Sh56f3VBOPwr0HVPDvgy58FWMdk6SaqimS5SOHBUADJIBXpxjJOcniuS8Va9aaXN5Gh3Di55SRY/nUe+/v+lcfa69qFuwa5nmmjBJZWOfXnnikoyk7jlFJ6kmpaRfadi6himeJZPklxg9eM4PHHOATVDUNVuGRt58yQvy2Tzjvz3r0jwhqNvrGkbIVV5TOzyJgHC4AZzgdcD0rjfHmgtbXstxZx+bC7kgRqW28+wwPp2qoTvuVKKtoc/LcNMGY5BIx8xPNekfs14X42eHgjqAy3GQM5x9ml4NcVoehXt7atcSxNFCD94jG48cDJ4Ne5fAvw3Zw/Eey1CHyFazMq7EBzkwMu4E9QdzdOOKVWzpyt2ZjdQnFvuj6Tooorwj1QooooA5zxQm+9VSNytCAQfqa8tl83TvFLafMrSWWqRvHG56K+DlD9R0r3KSGGRg0kUbkd2UGqs2kaVMyNNpllIUYMpaBSVYdCOODXbSxahFKx83jsiniK7qxklqfnx4nmh0nWrq3ZiEilaNO5xngVSksYRqenTko3nXGDE5KOVOCDnsOP519+3fw/wDAd3OZ7rwT4auJWO4vLpUDMT65K9aD4B8Cm5W5Pgrw356EFZf7Lh3Ljpg7cirljYy6HrUsLKEUmz5g0vwfHHOZbezeeRZRlJo5NqAHJIIIGfQDJNWNWvYNNivbq8KAxW4ZYZY5EYDoDjPzHJ7nj0r6otPD2gWcfl2mh6Zbpu3bYrRFGeeeB15P51UuvBXg273/AGrwloM/mNvfzNOibc3qcryfep+tQtsaKjNPfQ+BNX1S/wDEWqGS4mldVUIBkkhR2waelt9nWIgnB5D4IVvz4r7xT4feAkYMngjw0pHQjSoBj/x2pT4H8FElj4P8Pknqf7Nh5/8AHa0WOiugSw7fU+NPB3ivVNHmRorlkjik+UoQHXOOQePTHJxWjruuan4kvJZJZ5fIXAeZ9pkI9GIwD9K+uh4H8FBdo8H+Hwuc4/s2HGf++afH4M8Hxtuj8J6Ch9V06If+y0fXaf8AKSsM073Pje21W1025Cx26FFXa6Ekhuc5JJ4PA4rShFpqyhliDo6sQ/Mpj9tq4I+vPSvrOTwP4LkkaSTwh4fd2OSzabCSfx20v/CEeDNwb/hEfD+QMA/2bD/8TQ8bHsUqDve58Q3tubO5MBbOW6f/AFvX8at6P4i1XThPDZXUkbTfKVDgEj0GeR9K+1pPB/hGSFIZPC2hvGn3UbT4iq/QbeKjXwN4KUEL4P8ADwBOeNNh/wDiaf16NrWJeGb6nxzLaXUW2+1d5S+1iqSZQqR0GGzkH14qOwvhM7wW0eYmJdAThxkckEE59+v4V9mN4L8HMCG8J6CQeoOnRc/+O0kXgjwXC4eLwj4fjYdCumwgj/x2l9ej2K+rvufEmrWE0cb3ifMrH5vL+cf7wKjHXscYqDQtbu9Jv1mtWRgg+6x4J7Ee+a+4T4I8FkEHwh4fIY5P/Eth5P8A3zTR4E8EAkjwb4dBPX/iWQ8/+O0/r0ewnh21a58iax8QNW1N7aSaGLzI1K8xfKRjnK5I68nAPTtWTNaXt1by6heysymTahYHbn26DHv+FfacPgjwXCSYfCHh+MkYJTTYRkenC0+fwZ4PnJM/hTQZSepfToj/ADWl9djfYI4ZxVkz4gkiJWXAUoigErzg/VeD+dZ0geIxkHg9Dn/9Zr7tTwP4KQEJ4P8AD6g9hpsI/wDZaU+CPBhLE+EdAJbrnTYef/Har+0I9geGb6nxf4X8ZX2jWslq0QuLGWRW8qQsQAGBIHPBJHpWrq3ibWfFFxcTQv8AYYDjzVQHKqeuTwSM9sd6+uB4E8Dg5Hg3w7n/ALBkP/xNSHwV4NMQiPhLQDGpyFOnQ4B+m2peNg/siWFtK9z4x09LG3m22rGaZc+bKciPp3wNw+lVNS0vz7YxxRQqceZu3Dn0xjmvtZvA3gl8bvB3h5scDOmQn/2WnxeC/B0RBi8J6DGV6bdOiGO392j69HsU8O31PgXw/cXVjcSNE7xurNuAJXPsQfWu60vxppEFiLR7uS2fyyXhS3VEdz0beMsCOeg719dt4C8DOzM3gzw4zMcsTpcJJPv8tM/4V54A37/+EG8Mbh3/ALJgz/6DR9ej2IqYRz0ufH+seNLaKFl02AvK75jlPzBMgZyBwRx6V2H7Luqahq3xPg+0TGS3t0mZcgD53R+Bjt94/jX0mvgLwKhBXwX4cXHTGlwj/wBlq5pHhbwzo8wm0jw7pGnygkh7WyjiYEjBOVA7cVnLFxcWktwnhpvls9mn9zNeiiiuE7QooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==" alt="Portrait of Dr. Mariamma Mathew" width="260" height="309"></div>
+ </div>
+ <div class="facts">
+  <div><b>29 yrs</b><span>teaching teacher educators</span></div>
+  <div><b>6</b><span>Ph.D. scholars guided to award</span></div>
+  <div><b>25</b><span>journal papers, 16 book chapters and books</span></div>
+  <div><b>98</b><span>talks, sessions and presentations</span></div>
+ </div>
+</div>
+
+<section id="about"><div class="wrap">
+ <h2>About</h2>
+ <div class="grid">
+  <div class="card"><h3>What I do</h3><p>I teach educational technology and the pedagogy of physical science, supervise doctoral and M.Ed research, and help plan B.Ed and M.Ed curricula for the University of Kerala, including the integrated B.Sc. B.Ed. and B.Ed. M.Ed. programmes.</p></div>
+  <div class="card"><h3>Signature project</h3><p>A UGC-funded Major Research Project (2012–2014, ₹7,26,100) led to an e-portfolio platform where student teachers upload work, assessed by rubrics, and employers can view it. Described as the first of its kind in Indian teacher education.</p><p><a href="https://teacherseportfolio.com" rel="noopener">teacherseportfolio.com</a></p></div>
+  <div class="card"><h3>Ways of working</h3><p>Leads by example, with strong analytical and written skills. Experienced in quality assurance: convener of the IQAC, co-convener of NAAC preparation and convener of the Student Grievance Redressal Cell.</p></div>
+ </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+ <h2>Experience</h2>
+ <ol class="tl">
+  <li><h3>Head of Department, M.Ed – Titus II Teachers College, Thiruvalla</h3><div class="when">August 2025 – present</div><p>Research and statistics, dissertation guidance.</p></li>
+  <li><h3>Peet Memorial Training College, Mavelikara</h3><div class="when">1995 – 2024 (retired March 2024)</div><p>Rose from Lecturer (1995) through Selection Grade and Associate Professor (2009) to Principal (2020) and Professor (2021). Taught educational technology and methodology of physical science, evaluated student teachers and ran college-wide academic activities.</p></li>
+  <li><h3>Lecturer in Physics – College of Applied Sciences, Puthuppally (IHRDE)</h3><div class="when">June 1994 – May 1995</div><p>Taught higher secondary and B.Sc. Electronics students and ran the Physics lab.</p></li>
+  <li><h3>High school teacher – Seventh Day Adventist High School, Mavelikara</h3><div class="when">May – November 1991</div><p>Taught Physics to high school classes.</p></li>
+ </ol>
+</div></section>
+
+<section id="education"><div class="wrap">
+ <h2>Education</h2>
+ <div class="scroll"><table class="edu">
+  <tr><th>Year</th><th>Qualification</th><th>Institution</th><th>Result</th></tr>
+  <tr><td>2025</td><td>Diploma in Life Skills Education</td><td>State Resource Centre, Kerala</td><td>79.5%, first rank</td></tr>
+  <tr><td>2005</td><td>Ph.D., Science Education</td><td>Mahatma Gandhi University</td><td>Theory–practical integration in high school physical science teaching</td></tr>
+  <tr><td>1994</td><td>UGC NET, Education</td><td>UGC</td><td>Qualified</td></tr>
+  <tr><td>1993</td><td>M.Ed.</td><td>University of Kerala</td><td>67.7%, 5th rank</td></tr>
+  <tr><td>1991</td><td>B.Ed., Physical Science</td><td>University of Kerala</td><td>72.6%, first class</td></tr>
+  <tr><td>1990</td><td>M.Sc. Physics</td><td>University of Kerala</td><td>62.2%, first class</td></tr>
+  <tr><td>1988</td><td>B.Sc. Physics</td><td>University of Kerala, Bishop Moore College</td><td>73.9%, first class</td></tr>
+ </table></div>
+</div></section>
+
+<section id="research"><div class="wrap">
+ <h2>Research and publications</h2>
+ <div class="grid" style="margin-bottom:2rem">
+  <div class="card"><h3>Doctoral supervision</h3><p>Six Ph.D. theses awarded under my guidance, on topics such as socio-scientific issue-based learning, fishbone diagrams for critical thinking and gender sensitisation modules. Two M.Ed. dissertations guided.</p></div>
+  <div class="card"><h3>Books</h3><ul><li><i>Teaching Science</i> (NAS Publishers, 2014, revised 2015)</li><li><i>Instructional Strategies and Techniques in Science Education</i> (2018)</li><li>Editor, <i>Gender in 21st Century</i></li></ul></div>
+  <div class="card"><h3>Editorial and review</h3><p>Editor of <i>Conflux Journal of Education</i>, associate editor of two NAS Publishers journals and reviewer for the <i>Journal of Applied Research in Higher Education</i> (Emerald).</p><p class="sub">Google Scholar: 69 citations.</p></div>
+ </div>
+ <div class="tabs" role="tablist" aria-label="Publication type">
+  <button role="tab" aria-selected="true" data-t="papers">Journal papers</button>
+  <button role="tab" aria-selected="false" data-t="chapters">Book chapters</button>
+ </div>
+ <ul class="pubs" id="papers">
+  <li><b>Examining higher secondary school students’ perceptions of gender-sensitive education</b><span>Teacher, Learner and Society · 2024 · joint author</span></li>
+  <li><b>Impediments to achievement in Chemistry</b><span>Teacher, Learner and Society · 2023 · joint author</span></li>
+  <li><b>Girls with autism and puberty: Perspectives</b><span>TISS Journal of Disability Studies and Research · 2022 · joint author</span></li>
+  <li><b>Learning science from home: Use of TPACK by secondary school children of Kerala, India</b><span>New Frontiers in Education · 2021 · single author</span></li>
+  <li><b>Relationship between social adjustment and self concept of secondary students of Kerala, India</b><span>IOSR Journal of Research and Method in Education · 2020 · single author</span></li>
+  <li><b>Socio-scientific issue based learning: A milieu for life skill development</b><span>GCTE Journal of Research and Extension in Education · 2018 · joint author</span></li>
+  <li><b>Incorporating problem based learning in the teacher education programme</b><span>Gurujyothi Research and Reflections · 2011 · single author</span></li>
+ </ul>
+ <ul class="pubs" id="chapters" hidden>
+  <li><b>Holistic and multidisciplinary education: Integrating science, humanities and human values</b><span>Vision 2030: Trends in Teacher Education · 2026</span></li>
+  <li><b>Effectiveness of fishbone diagram in enhancing problem solving ability and critical thinking</b><span>Transforming Indian Education (CTEF Kerala) · 2026 · co-author</span></li>
+  <li><b>Beyond algorithms: Human survival skills in the AI era</b><span>Envisioning Education: Learner agency in the AI era · 2025</span></li>
+  <li><b>Work ethics for teachers</b><span>Crafting a New World in School Education (CTEF) · 2021</span></li>
+  <li><b>Development of information system on e-portfolio based knowledge generation and sharing</b><span>Educational Leadership for Global Social Justice · 2016</span></li>
+ </ul>
+</div></section>
+
+<section id="recognition"><div class="wrap">
+ <h2>Recognition</h2>
+ <ul class="awards">
+  <li><span class="yr">2026</span><div>Best Research Supervisor<small>Association of International Researchers of Indian Origin (AIRIO)</small></div></li>
+  <li><span class="yr">2025</span><div>Lifetime Achievement in Education<small>MES Pillai College of Education and Research with CEAM</small></div></li>
+  <li><span class="yr">2024</span><div>Best Principal of India<small>All India Association for Christian Higher Education, New Delhi</small></div></li>
+  <li><span class="yr">2023</span><div>Best Administration and Management of the Year 2022<small>Council for Teacher Education Foundation (CTEF) Kerala</small></div></li>
+  <li><span class="yr">2021</span><div>Special Principal Recognition Award<small>National Education Icon Awards</small></div></li>
+  <li><span class="yr">2020</span><div>Research Excellence Award<small>National Institute of Scholars</small></div></li>
+  <li><span class="yr">2018</span><div>Dr. K.R. Sivadasan Memorial National Award for Accomplished Teacher Educator<small>National Council for Teacher Education</small></div></li>
+  <li><span class="yr">2017</span><div>Dr. N.P. Pillai Memorial Literary Award in Teacher Education<small>Dr. K. Sivadasan Pillai Foundation, state level</small></div></li>
+ </ul>
+ <h2 style="margin:3rem 0 1.2rem">Talks and conferences</h2>
+ <div class="grid">
+  <div class="card"><h3>Abroad</h3><ul><li>Paisley, Scotland, UK (2017): HETL International Conference</li><li>Bangkok, Thailand (2014): 17th UNESCO-APEID Conference</li><li>Australia (2013): ePortfolio Forum</li></ul></div>
+  <div class="card"><h3>Recent invited sessions</h3><ul><li>Faculty of Education, Tribhuvan University, Nepal (2025)</li><li>School of Education, Kathmandu University (2025)</li><li>UGC-MMTTC programmes at Kerala, Hyderabad and Jamia Millia Islamia</li></ul></div>
+  <div class="card"><h3>Topics</h3><p>Gender sensitive education, life skills, e-assessment, mindfulness in teaching, inclusive education, research methodology and NEP 2020.</p></div>
+ </div>
+</div></section>
+
+<section id="service"><div class="wrap">
+ <h2>Academic service</h2>
+ <div class="grid">
+  <div class="card"><h3>University roles</h3><ul><li>Former member, Academic Council, University of Kerala</li><li>Research guide in Education, University of Kerala</li><li>Subject expert for B.Ed. and M.Ed. curricula and source books</li><li>External evaluator of M.Ed. theses and viva voce</li></ul></div>
+  <div class="card"><h3>Professional bodies</h3><ul><li>Life and executive member, Council for Teacher Education Foundation, Kerala</li><li>Life member: AIRIO, AIAER, CCEAM, ADTEL</li><li>Member, HETL Association, New York</li><li>Executive member, Human Resources and Skill Development Foundation</li></ul></div>
+  <div class="card"><h3>Examinations and judging</h3><ul><li>Question paper setter for Kerala Public Service Commission</li><li>Chairman and chief of theory examinations, B.Ed.</li><li>Judge: C.V. Raman state essay competition, INSPIRE and district science fairs</li></ul></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <div class="contact">
+  <div><h2>Contact</h2><p>Open to invitations for talks, research guidance, curriculum work and academic collaboration.</p></div>
+  <dl>
+   <dt>Email</dt><dd><a href="mailto:minikalappurackal@gmail.com">minikalappurackal@gmail.com</a></dd>
+   <dt>Phone</dt><dd><a href="tel:+919447463483">+91 94474 63483</a></dd>
+   <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/mariamma-mathew-52686650" rel="noopener">mariamma-mathew-52686650</a></dd>
+   <dt>ORCID</dt><dd><a href="https://orcid.org/0000-0001-7733-0743" rel="noopener">0000-0001-7733-0743</a></dd>
+   <dt>Address</dt><dd>Kalappurackal Puthen Veedu, Mavelikara 690101, Kerala</dd>
+  </dl>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap">© Dr. Mariamma Mathew. Prepared from curriculum vitae.</div></footer>
+
+<script>
+(function(){
+ var btn=document.getElementById('menu'),nav=document.getElementById('nav');
+ btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+ nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+ var links=[].slice.call(nav.querySelectorAll('a'));
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+ links.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)io.observe(s)});
+ document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-selected',x===b)});
+  ['papers','chapters'].forEach(function(id){document.getElementById(id).hidden=(id!==b.dataset.t)})})});
+})();
+</script>
+</body>
+</html>
